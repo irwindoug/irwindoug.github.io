@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+/* Default Colors */
+:root {
+    --background-color: var(--primary-color);
+    --secondary-background: #FEFAE0;
+    --primary-color: #606C38;
+    --secondary-color: #283618;
+    --accent1-color: #DDA15E;
+    --accent2-color: #BC6C25;
+
+    --headline-color-on-white: black;
+    --headline-color-on-color: #FFFFFF;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: var(--accent1-color);
+    --text-background-color: var(--accent1-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: var(--accent1-color);
+    --nav-hover-background-color: var(--secondary-color);
+}
+
+/***** Elements *****/
+body {
+    background-color: var(--background-color);
+}
+
+header,
+main,
+footer {
+    padding: 1em 2em;
+}
+
+header,
+footer {
+    background-color: var(--paragraph-color-on-color);
+}
+
+header {
+    border-radius: 15px 15px 0 0;
+}
+
+footer {
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    padding-right: 300px;
+}
+
+main {
+    background-color: var(--secondary-background);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fira Code', monospace;
+    color: var(--secondary-color);
+}
+
+ul,
+h1,
+h2 {
+    margin: 0;
+}
+
+a {
+    color: var(--nav-link-color);
+}
+
+a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    text-decoration: none;
+    padding: 2px;
+}
+
+/***** Classes *****/
+
+/***** IDs *****/
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+    border-radius: 50%;
+}
+
+#profile-img {
+    filter: brightness(1.25);
+    margin: 5px;
+    position: absolute;
+    z-index: 1;
+    right: 15px;
+    top: 15px;
+    height: 85%;
+}
+
+/* Media Response */
+@media screen and (max-width: 660px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #profile-img {
+        order: -1;
+        position: inherit;
+        margin: 0;
+        width: 50%;
+        background-color: var(--secondary-background);
+    }
+}
