@@ -4,10 +4,11 @@
 :root {
     --background-color: var(--primary-color);
     --secondary-background: #FEFAE0;
-    --primary-color: #606C38;
-    --secondary-color: #283618;
-    --accent1-color: #DDA15E;
-    --accent2-color: #BC6C25;
+    --primary-color: #0F4C5C;
+    --secondary-color: #5F0F40;
+    --accent1-color: #E36414;
+    --accent2-color: #FB8B24;
+    --accent3-color: #9A031E;
 
     --headline-color-on-white: black;
     --headline-color-on-color: #FFFFFF;
@@ -16,8 +17,8 @@
     --text-background-color: var(--accent1-color);
     --nav-link-color: var(--primary-color);
     --nav-background-color: var(--secondary-color);
-    --nav-hover-link-color: var(--accent1-color);
-    --nav-hover-background-color: var(--secondary-color);
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--accent3-color);
 }
 
 /***** Elements *****/
@@ -75,6 +76,10 @@ a:hover {
 }
 
 /***** Classes *****/
+
+.accent{
+    color: var(--accent3-color)
+}
 
 /***** IDs *****/
 #content {
