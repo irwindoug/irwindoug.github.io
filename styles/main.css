@@ -98,6 +98,8 @@ a:hover {
     right: 15px;
     top: 15px;
     height: 85%;
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 5px;
 }
 
 /* Media Response */
@@ -105,6 +107,16 @@ a:hover {
     header {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    header h1{
+        text-align: center;
+        font-size: 3em;
+    }
+
+    footer {
+        padding-right: 0;
     }
 
     #profile-img {
