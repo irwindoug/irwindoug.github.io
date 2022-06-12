@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+/* Default Colors */
+:root {
+    --background-color: var(--primary-color);
+    --secondary-background: #FEFAE0;
+    --primary-color: #0F4C5C;
+    --secondary-color: #5F0F40;
+    --accent1-color: #E36414;
+    --accent2-color: #FB8B24;
+    --accent3-color: #9A031E;
+
+    --headline-color-on-white: black;
+    --headline-color-on-color: #FFFFFF;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: var(--accent1-color);
+    --text-background-color: var(--accent1-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--accent3-color);
+}
+
+body{
+    background-color: var(--background-color);
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100%;
+    font-family: 'Fira Code', monospace;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 60rem;
+}
+
+section {
+    background-color: var(--secondary-background);
+    margin: .25rem;
+    box-shadow: 5px 5px 5px #000;
+}
+
+h2 {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+    border-bottom: .1rem solid #000;
+    font-weight: bold;
+}
+
+a {
+    color: var(--nav-link-color);
+}
+
+a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    text-decoration: none;
+    padding: .01em;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--paragraph-color-on-color);
+    text-align: center;
+    padding: .75rem;
+}
+
+.website-img,
+.description {
+    margin: 0 auto;
+    padding: 0 .5rem;
+    margin-block-end: .5em;
+    line-height: 1.25;
+}
+
+.heading {
+    text-align: center;
+    line-height: 3;
+}
+
+.accent{
+    color: var(--accent3-color)
+}
